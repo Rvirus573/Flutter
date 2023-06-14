@@ -6,9 +6,7 @@ class Add_screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
-      body:  Text('Add Screen'),
-     
+      body: Text('Add Screen'),
     );
   }
 }

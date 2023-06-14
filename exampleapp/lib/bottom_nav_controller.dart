@@ -15,9 +15,9 @@ class BottomNav extends StatefulWidget {
 class _BottomNavState extends State<BottomNav> {
   final _pages = [
     Home(),
-    const MyAds(),
+    MyAds(),
     const Add_screen(),
-    const Chat(),
+    Chat(),
     const Account(),
   ];
 
@@ -34,16 +34,17 @@ class _BottomNavState extends State<BottomNav> {
         },
         unselectedItemColor: Colors.white,
         selectedItemColor: Colors.purple,
+        
         items: const [
           BottomNavigationBarItem(
               icon: Icon(Icons.home_max_outlined),
               label: 'Hoem',
-              backgroundColor: Colors.blueGrey),
+              backgroundColor: Colors.cyan),
           BottomNavigationBarItem(
-              icon: Icon(Icons.ads_click_outlined), label: 'My Ads'),
-          BottomNavigationBarItem(icon: Icon(Icons.add), label: 'Add'),
-          BottomNavigationBarItem(icon: Icon(Icons.message), label: 'Chat'),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Account'),
+              icon: Icon(Icons.ads_click_outlined), label: 'My Ads', backgroundColor: Colors.cyan),
+          BottomNavigationBarItem(icon: Icon(Icons.add), label: 'Add', backgroundColor: Colors.cyan),
+          BottomNavigationBarItem(icon: Icon(Icons.message), label: 'Chat', backgroundColor: Colors.cyan),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Account', backgroundColor: Colors.cyan),
         ],
       ),
       body: _pages[_currentindex],
